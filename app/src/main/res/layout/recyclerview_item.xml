@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_city"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="placeholder text"/>
+
+    <TextView
+        android:id="@+id/textView_temp"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="placeholder text"/>
+
+    <TextView
+        android:id="@+id/textView_pressure"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_city"
+        tools:text="placeholder text"/>
+
+    <TextView
+        android:id="@+id/textView_humidity"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_pressure"
+        tools:text="placeholder text"/>
+
+    <TextView
+        android:id="@+id/textView_temp_min"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_humidity"
+        tools:text="placeholder text"/>
+
+    <TextView
+        android:id="@+id/textView_temp_max"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_temp_min"
+        tools:text="placeholder text"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
